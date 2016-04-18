@@ -7,6 +7,27 @@ import  java.util.ArrayList;
 
 public class PingPong {
   public static void main(String[] args) {}
+    // String layout = "templates/layout.vtl";
+    //
+    //     get("/", (request, response) -> {
+    //       Map<String, Object> model = new HashMap<String, Object>();
+    //       model.put ("template", "templates/home.vtl");
+    //       return new ModelAndView(model, layout);
+    //     }, new VelocityTemplateEngine());
+    //
+    //     get("/results", (request, response) -> {
+    //       Map<String, Object> model = new HashMap<String, Object>();
+    //       model.put("template", "templates/results.vtl");
+    //
+    //       Integer number = request.queryParams(number);
+    //       // Integer integerYear = Integer.parseInt(year);
+    //       ArrayList isPingPong = isPingPong(number);
+    //
+    //       model.put("isPingPong", isPingPong);
+    //       model.put("number", request.queryParams("number"));
+    //       return new ModelAndView(model, layout);
+    //     }, new VelocityTemplateEngine());
+    //   }
 
     public static ArrayList isPingPong(Integer number) {
       ArrayList<Object> numbersArrayList = new ArrayList<Object>();
@@ -20,10 +41,10 @@ public class PingPong {
       } else {
           numbersArrayList.add(i);
         }
-}
+      }
       //get number and then count up until we reach that number, and add each "step" to an arrayList,
 
-      //then return ArrayList.
       return numbersArrayList;
+    // (ul#results).add("<li>" + numbersArrayList + "</li>");
     }
 }
